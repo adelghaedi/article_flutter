@@ -1,17 +1,53 @@
 # article_flutter
 
-A new Flutter project.
+A Flutter application for managing articles, built as a practice project to demonstrate clean architecture with GetX state management and Dio HTTP client.
+
+## Features
+
+- List all articles with status badges (published / draft)
+- Add new article with title, content, image, and active status
+- Edit existing articles
+- Delete articles
+- Image picker support (gallery)
+- RTL layout support (Persian)
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Flutter |
+| State Management | GetX |
+| HTTP Client | Dio |
+| Architecture | Repository Pattern |
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK
+- Dart SDK
+- A running instance of [article_drf](https://github.com/adelghaedi/article_drf)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# article_flutter
+1. Clone the repository:
+```bash
+git clone https://github.com/adelghaedi/article_flutter.git
+cd article_flutter
+```
+
+2. Install dependencies:
+```bash
+flutter pub get
+```
+
+3. Run the app:
+```bash
+flutter run -d chrome   # Web
+flutter run             # Mobile
+```
+
+## Backend
+
+This project connects to a Django REST Framework backend.
+See [article_drf](https://github.com/adelghaedi/article_drf) for the backend source code.
